@@ -1,0 +1,48 @@
+
+#############################
+# 0. Before running ensECBS script, please install the programs and edit the path variabales in the scripts 
+###########################
+
+# script to generate mat file from chemical sdf file 
+# edit the path in load("...PATH/comb_maccs_zero_idx.storable.data")
+Rscript scripts/genFP.r	
+
+# Prerequisites: 
+R - tested version 3.4.2 
+Perl - tested version v5.16.3 
+
+ChemmineOB package  
+source("https://bioconductor.org/biocLite.R")
+biocLite("ChemmineOB") 
+biocLite("ChemmineR")
+
+R ranger package (0.8.0 or higher) 
+install.packages("ranger") 
+
+# script to run ensECSB model 
+perl scripts/ECBS_calc_script.pl 
+
+########################################
+# 1. Conversion of sdf to mat file 
+##########################################
+
+# Note that first header line in sdf file will be an identifier in featue matrix, it shouldn't be empty
+
+Rscript ../scripts/genFP.r seed.sdf  seed.mat
+Rscript ../scripts/genFP.r seed.sdf  db.mat
+
+# You can generate pair mat file for seed.mat and db.mat  
+perl ../scripts/gen_pair_FP.pl -fp1 seed.mat -fp2 db.mat -out seed_db.mat
+
+#########################################################################
+# 2. Run ensECBS model  
+#####################################################################
+
+perl ../scripts/ensECBS_calc_script.pl -db db.mat -seed seed.mat -out db_seed.ensECBS.out -delete_file
+
+or
+
+perl ../scripts/ensECBS_calc_script.pl -pair_mat seed_db.mat -out db_seed.ensECBS.out -delete_file
+
+# check out [db_seed.ensECBS.out] file for ensECBS scores 
+
