@@ -1,43 +1,38 @@
-# Description
-Scripts to run ensemble evolutionary chemical binding similarity (ensECBS)
+# ensECBS 
+[![DOI](https://zenodo.org/)](https://zenodo.org/)
+
+## Description
+Scripts to run ensemble evolutionary chemical binding similarity (ensECBS).
 
 
-# Directory: 
-scripts/ - script directory for running ensECBS model
+## Directory: 
+scripts/ - script directory for running ensECBS model.
 
-example/ - test examples for ensECSB run
+example/ - test examples for ensECSB run.
 
-RF_Models_Integrated/ - directory for pre-built models. Pfam, Family, Superfamily, Target-ECSB, and ensemble ensECSB models should be downloaded from  
+RF_Models_Integrated/ - directory for pre-built models. Pfam, Family, Superfamily, Target-ECSB, and ensemble ensECSB models should be downloaded from [DOI](https://zenodo.org/). 
 
 
-
-# Prerequisites: 
-Before running ensECBS script, please install the prerequisite programs and edit the path variabales in the scripts 
+## Prerequisites: 
+Before running ensECBS script, please install the prerequisite programs and edit the path variabales in the scripts. 
 
 R - tested version 3.4.2
 
 Perl - tested version v5.16.3 
 
-ChemmineOB package
-Install with source("https://bioconductor.org/biocLite.R")
-biocLite("ChemmineOB") 
-biocLite("ChemmineR")
-
 R ranger package (0.8.0 or higher)
 
+ChemmineOB package, 
+```
+source("https://bioconductor.org/biocLite.R")
+biocLite("ChemmineOB") 
+biocLite("ChemmineR")
+```
 
-# Run options  
-Script to generate mat file from chemical sdf file 
+## Script to run ensECBS 
+`perl scripts/ensECBS_calc_script.pl`
 
-./scripts/genFP.r	
-
-./scripts/ensECBS_calc_script.pl
-
-
-# Script to run ensECBS 
-perl scripts/ensECBS_calc_script.pl 
-
-Usage: ../scripts/ensECBS_calc_script.pl -db <db.mat> -seed <seed.mat> -pair_mat <seed_db.mat> -out <out file> -overwrite -overwrite_model -overwrite_pair_mat -delete_file -help
+**Usage**: perl ensECBS_calc_script.pl -db <db.mat> -seed <seed.mat> -pair_mat <seed_db.mat> -out <out file> -overwrite -overwrite_model -overwrite_pair_mat -delete_file -help
 Usage:
 
 -db : data mat file (necessary)
@@ -56,7 +51,9 @@ Usage:
 
 -delete_file : delete all intermediate files
 
-# Run examples
+## Run examples
 check ./example/TEST_example.txt file  
 
+## Contributors
+Keunwan Park (keunwan@kist.re.kr)
 
