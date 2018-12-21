@@ -33,7 +33,8 @@ biocLite("ChemmineR")
 `perl scripts/ensECBS_calc_script.pl`
 
 **Usage**: perl ensECBS_calc_script.pl -db <db.mat> -seed <seed.mat> -pair_mat <seed_db.mat> -out <out file> -overwrite -overwrite_model -overwrite_pair_mat -delete_file -help
-Usage:
+
+**Usage**:
 
 -db : data mat file (necessary)
 
@@ -52,7 +53,7 @@ Usage:
 -delete_file : delete all intermediate files
 
 ## Run examples
-check ./example/TEST_example.txt file  
+See ./example/TEST_example.txt file  
 
 ## Contributors
 Keunwan Park (keunwan@kist.re.kr)
