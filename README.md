@@ -7,7 +7,8 @@ scripts/ - script directory for running ensECBS model
 
 example/ - test examples for ensECSB run
 
-Models/ - directory for pre-built Pfam, Family, Superfamily, Target-ECSB, and ensemble ensECSB model
+RF_Models_Integrated/ - directory for pre-built models. Pfam, Family, Superfamily, Target-ECSB, and ensemble ensECSB models should be downloaded from  
+
 
 
 # Prerequisites: 
@@ -56,6 +57,6 @@ Usage:
 -delete_file : delete all intermediate files
 
 # Run examples
-check ./example directory 
+check ./example/TEST_example.txt file  
 
 
