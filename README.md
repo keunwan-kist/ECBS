@@ -1,5 +1,4 @@
 # ensECBS 
-[![DOI](https://sandbox.zenodo.org/badge/DOI/10.5072/zenodo.256309.svg)](https://doi.org/10.5072/zenodo.256309)
 
 ## Description
 Scripts to run ensemble evolutionary chemical binding similarity (ensECBS).
@@ -12,6 +11,7 @@ example/ - test examples for ensECSB run.
 
 RF_Models_Integrated/ - directory for pre-built models. Pfam, Family, Superfamily, Target-ECSB, and ensemble ensECSB models should be downloaded from (https://doi.org/10.5072/zenodo.256309) 
 
+[![DOI](https://sandbox.zenodo.org/badge/DOI/10.5072/zenodo.256309.svg)](https://doi.org/10.5072/zenodo.256309)
 
 ## Prerequisites: 
 Before running ensECBS script, please install the prerequisite programs and edit the path variabales in the scripts. 
