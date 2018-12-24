@@ -1,5 +1,5 @@
 # ensECBS 
-[![DOI](https://zenodo.org/)](https://zenodo.org/)
+[![DOI](https://doi.org/10.5072/zenodo.256309)](https://doi.org/10.5072/zenodo.256309)
 
 ## Description
 Scripts to run ensemble evolutionary chemical binding similarity (ensECBS).
@@ -10,7 +10,7 @@ scripts/ - script directory for running ensECBS model.
 
 example/ - test examples for ensECSB run.
 
-RF_Models_Integrated/ - directory for pre-built models. Pfam, Family, Superfamily, Target-ECSB, and ensemble ensECSB models should be downloaded from [DOI](https://zenodo.org/). 
+RF_Models_Integrated/ - directory for pre-built models. Pfam, Family, Superfamily, Target-ECSB, and ensemble ensECSB models should be downloaded from [DOI](https://doi.org/10.5072/zenodo.256309). 
 
 
 ## Prerequisites: 
@@ -34,7 +34,7 @@ biocLite("ChemmineR")
 
 **Usage**: perl ensECBS_calc_script.pl -db <db.mat> -seed <seed.mat> -pair_mat <seed_db.mat> -out <out file> -overwrite -overwrite_model -overwrite_pair_mat -delete_file -help
 
-**Usage**:
+**Options**:
 
 -db : data mat file (necessary)
 
