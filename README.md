@@ -9,9 +9,9 @@ scripts/ - script directory for running ensECBS model.
 
 example/ - test examples for ensECSB run.
 
-RF_Models_Integrated/ - directory for pre-built models. Pfam, Family, Superfamily, Target-ECSB, and ensemble ensECSB models should be downloaded from https://sandbox.zenodo.org/record/256309#.XCBtjWgzaUk 
+RF_Models_Integrated/ - directory for pre-built models. Pfam, Family, Superfamily, Target-ECSB, and ensemble ensECSB models should be downloaded from https://sandbox.zenodo.org/record/297093#.XQgtfIgzaUk 
 
-[![DOI](https://sandbox.zenodo.org/badge/DOI/10.5072/zenodo.297093.svg)](https://doi.org/10.5072/zenodo.297093)
+[![DOI](https://sandbox.zenodo.org/badge/DOI/10.5072/zenodo.297093.svg)](https://sandbox.zenodo.org/record/297093#.XQgtfIgzaUk)
 
 ## Prerequisites: 
 Before running ensECBS script, please install the prerequisite programs and edit the path variabales in the scripts. 
