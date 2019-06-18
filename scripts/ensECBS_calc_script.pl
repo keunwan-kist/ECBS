@@ -13,9 +13,9 @@ use Data::Dumper;
 
 ############ Change the dir paths below to your system ################
 
-my $SCPT        = "/home/users/keunwan/programs/EECBS_v1/scripts";
-my $Prior_MODEL = "/home/users/keunwan/programs/EECBS_v1/RF_Models_Integrated";	# [target].data.ranger_rf_model
-my $INT_Model_D = "$Prior_MODEL/intergrated_scoring_model_D_rf";		# ensECBS   
+my $SCPT        = "/home/users/keunwan/programs/ensECBS_v1/scripts";
+my $Prior_MODEL = "/home/users/keunwan/programs/ensECBS_v1/RF_Models_Integrated";	# [target].data.ranger_rf_model
+my $INT_Model_D = "$Prior_MODEL/intergrated_scoring_model_D_rf_v1.1";		# ensECBS   
 
 
 #######################################################################
