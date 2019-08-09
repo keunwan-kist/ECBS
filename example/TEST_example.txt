@@ -19,7 +19,7 @@ biocLite("ChemmineR")
 R ranger package (0.8.0 or higher) 
 install.packages("ranger") 
 
-# script to run ensECSB model 
+# script to run ensECBS model 
 perl scripts/ECBS_calc_script.pl 
 
 ########################################
